@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Presensi</string>
+    <string name="login_fragment">Login</string>
+    <string name="forget_password_fragment">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget password? <u>Click here!</u></string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="send_email">Send Email</string>
+    <string name="logout">Logout</string>
+    <string name="id_employee">Id Employee</string>
+    <string name="id">Id</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="date">05 September 2022</string>
+    <string name="check_in_label">Check In:</string>
+    <string name="check_out_label">Check Out:</string>
+    <string name="location_in_label">Location In:</string>
+    <string name="location_out_label">Location Out:</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="attendance_record">Record</string>
+    <string name="profile">Profile</string>
+    <string name="your_location">Your Location</string>
+    <string name="description">Description</string>
+    <string name="google_map_key">Use your own google secret key</string>
+    <string name="setting">Setting</string>
+    <string name="check_in_alarm">Check In Alarm</string>
+    <string name="check_out_alarm">Check Out Alarm</string>
+    <string name="time">00</string>
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+    <string name="set_alarm_label">Set Alarm</string>
+    <string name="notification_description">Open Application!!!</string>
+    <string-array name="description">
+        <item>Hadir</item>
+        <item>Sakit</item>
+        <item>Izin</item>
+    </string-array>
+</resources>

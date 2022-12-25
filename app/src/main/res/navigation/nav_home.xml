@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.syahrido.mualim.example.presensiapp.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.syahrido.mualim.example.presensiapp.home.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_nav_profile_to_settingFragment"
+            app:destination="@id/nav_setting" />
+        <action
+            android:id="@+id/action_nav_profile_to_nav_home"
+            app:destination="@id/nav_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.syahrido.mualim.example.presensiapp.home.AttendanceFragment"
+        android:label="@string/attendance"
+        tools:layout="@layout/fragment_attendence">
+        <action
+            android:id="@+id/action_nav_attendance_to_checkInFragment"
+            app:destination="@id/nav_checkIn" />
+        <action
+            android:id="@+id/action_nav_attendance_to_checkOutFragment"
+            app:destination="@id/nav_checkOut" />
+        <action
+            android:id="@+id/action_nav_attendance_to_checkOutFragment2"
+            app:destination="@id/nav_checkOut" />
+        <action
+            android:id="@+id/action_nav_attendance_to_checkOutFragment3"
+            app:destination="@id/nav_checkOut"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_nav_attendance_to_nav_home"
+            app:destination="@id/nav_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_attendance_record"
+        android:name="com.syahrido.mualim.example.presensiapp.home.AttendanceRecordFragment"
+        android:label="@string/attendance_record"
+        tools:layout="@layout/fragment_attendance_record" >
+        <action
+            android:id="@+id/action_nav_attendance_record_to_nav_home"
+            app:destination="@id/nav_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_checkIn"
+        android:name="com.syahrido.mualim.example.presensiapp.home.CheckInFragment"
+        android:label="@string/check_in"
+        tools:layout="@layout/fragment_check_in">
+        <action
+            android:id="@+id/action_checkInFragment_to_nav_attendance_record"
+            app:destination="@id/nav_attendance_record"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_checkOut"
+        android:name="com.syahrido.mualim.example.presensiapp.home.CheckOutFragment"
+        android:label="@string/check_out"
+        tools:layout="@layout/fragment_check_out">
+        <action
+            android:id="@+id/action_checkOutFragment_to_nav_attendance_record"
+            app:destination="@id/nav_attendance_record"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.syahrido.mualim.example.presensiapp.home.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_settingFragment_to_nav_profile"
+            app:destination="@id/nav_profile"
+            app:popUpTo="@id/nav_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
